@@ -75,13 +75,7 @@ def solve() -> None:
     part_1 = sum(
         count_word_occurrences(map, x, y) for x in range(width) for y in range(height)
     )
-    part_2 = sum(
-        [
-            1 if is_cross_mas(map, x, y) else 0
-            for x in range(width)
-            for y in range(height)
-        ]
-    )
+    part_2 = sum([is_cross_mas(map, x, y) for x in range(width) for y in range(height)])
 
     print("Part 1:", part_1)
     print("Part 2:", part_2)

@@ -1,0 +1,33 @@
+[project]
+dependencies = []
+description = "Add your description here"
+name = "aoc"
+readme = "README.md"
+requires-python = ">=3.12"
+version = "0.1.0"
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+]
+
+[tool.poetry]
+name = "aoc-24"
+version = "0.1.0"
+description = ""
+authors = ["Rui Caridade <ruidanielcaridade@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+mypy = "^1.13.0"
+isort = "^5.13.2"
+ipython = "^8.30.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
